@@ -1,0 +1,37 @@
+@import '../common/css/index.less';
+.dbr-main-layout {
+  flex: auto;
+  padding: 0 24px 24px;
+
+  .ant-breadcrumb {
+    margin: 20px 0 16px 0;
+    display: inline-block;
+  }
+
+  .dbr-table-container {
+    padding: @dbr-container-padding;
+    border-radius: 5px;
+    background-color: #fff;
+    .batch-command {
+      margin: 0 0 10px 0;
+      position: relative;
+      height: 30px;
+      .upload-btn {
+        display: block;
+        float: left;
+      }
+      & .batch-command-item {
+        margin: 0 12px 0 0;
+      }
+      & .batch-command-item:last-child {
+        margin: 0 0 0 12px;
+      }
+    }
+
+    span.dbr-table-description {
+      color: #b1b1b1;
+      margin-left: 6px;
+      line-height: 32px;
+    }
+  }
+}
